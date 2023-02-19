@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    int numerator1,denominator1,numerator2,denominator2;
+    int numerator_result,denominator_result;
+    printf("enter first numerator\n");
+    scanf("%d",&numerator1);
+    printf("enter first denominator\n");
+    scanf("%d",&denominator1);
+    printf("enter second numerator\n");
+    scanf("%d",&numerator2);
+    printf("enter second denomminator\n");
+    scanf("%d",&denominator2);
+    if(denominator1==denominator2)
+    {
+    numerator_result=numerator1+numerator2;
+    denominator_result=denominator2;
+    }
+    else
+    {
+        numerator_result=(numerator1*denominator2)+(numerator2*denominator1);
+        denominator_result=denominator1*denominator2;
+    }
+        printf("The result of %d/%d+%d/%d is%d/%d",numerator1,denominator1,numerator2,denominator2,numerator_result,denominator_result);
+        
+        return 0;
+        
+    }
+    
